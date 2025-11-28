@@ -7,6 +7,9 @@ body {
     background-color: cadetblue;
     text-align:center;
 }
+.recipe-head {
+    background-color:brown;
+}
 h1 {
     font-size: 100px;
     color: black;
@@ -36,12 +39,12 @@ width:250px;
     background-color:darkgray;
 }
 .search-bar button {
-    padding: 10pc 20px;
-    margin: none;
+    padding: 10px;
+    border: 1px solid;
+    background-color: lightgray;
     cursor: pointer;
-    color: white;
-    width:20px;
 }
+
 .starting-page {
      height: 100vh;
     display: flex;
