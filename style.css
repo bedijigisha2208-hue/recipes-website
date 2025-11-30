@@ -1,5 +1,5 @@
 html {
-    background-color: cadetblue;
+    background-image: url("https://cdn.pixabay.com/photo/2024/11/25/10/40/margaritas-9223058_1280.jpg");
 }
 body {
     margin: 0;
@@ -98,7 +98,4 @@ header {
     cursor: pointer;
     font-size: 30px;
     color: white;
-}
-#recipe-page {
-    background-image: url(https://cdn.pixabay.com/photo/2024/11/17/12/46/flower-9203759_1280.png);
 }
