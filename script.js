@@ -6,17 +6,24 @@ function searchButton() {
         let recipes = data.meals;
         let container = document.getElementById("recipe-grid");
         container.innerHTML = "";
-        recipes.forEach(meals => container.innerHTML += `
-            <div class ="recipe-card" onclick="openPopup(${meals.idMeals})">
-            <img src="${meals.strMealThumb} alt= "Recipe-Image">
-            <h3>${meals.strMeals}</h3>
+        recipes.forEach(meal => container.innerHTML += `
+            <div class ="recipe-card" onclick="openPopup(${meal.idMeal})">
+            <img src="${meal.strMealThumb}" alt= "Recipe-Image">
+            <h3>${meal.strMeal}</h3>
             </div>`
         );
     });
 };
-function openPopup(imageURL) {
+function openPopup(mealId) {
+fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
+.then (result => result.json())
+.then (data => {
+    const recipe = data.meals[0];
+    document.getElementById("popup-title").textContent = recipe.strMeal;
+    document.getElementById("popup-instructions").textContent = recipe.strInstructions;
     document.getElementById("popup-box").style.display = "flex";
-    document.getElementById("popup-img").src = imageURL;
+    document.getElementById("popup-img").src = recipe.strMealThumb;
+})
 }
 function closePopup() {
     document.getElementById("popup-box").style.display = "none";
