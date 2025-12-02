@@ -1,4 +1,4 @@
-.recipe-card {
+#recipe-grid {
     background: white;
     padding: 45px;
     border-radius:20px;
@@ -6,6 +6,11 @@
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s;
+    display: grid; 
+    grid-template-columns: 
+    repeat(auto-fill, minmax(180px, 1fr)); 
+    gap: 20px; 
+    padding: 20px;
 }
 #popup-content {
     overflow-y: auto;
@@ -16,7 +21,7 @@
     max-width: 300px;
 }
 
-.recipe-card:hover {
+#recipe-grid:hover {
     transform: scale(1.05);
 }
 html {
@@ -27,8 +32,6 @@ html {
     font-family:Arial, Helvetica, sans-serif; 
     background-color: cadetblue; 
     text-align:center; }
-.recipe-head { 
-    background-color:brown; } 
 h1 { 
     font-size: 100px; 
     color:black; 
@@ -79,14 +82,8 @@ header {
     display: flex; 
     align-items: center; 
     position: sticky; 
-    background-color: transparent; } 
-#recipe-grid { 
-    display: grid; 
-    grid-template-columns: 
-    repeat(auto-fill, minmax(180px, 1fr)); 
-    gap: 20px; 
-    padding: 20px;
-max-width: 1200px; } 
+    background-color: transparent; 
+} 
 .recipe-finder { 
     display: flex; 
     text-align: center; 
@@ -114,9 +111,9 @@ max-width: 1200px; }
     font-size: 30px; 
     color: black; }
 #popup-img {
-    height: 50px;
-    width: 100%;
-    display: block;
+    height: 30px;
+    width: 50%;
+    display: grid;
 }
 #popup-box {
     display: none;
@@ -130,7 +127,5 @@ max-width: 1200px; }
     padding: 20px;
     border-radius: 10px;
     z-index: 999;
-    align-items:center;
-    justify-content:center;
 
 }
