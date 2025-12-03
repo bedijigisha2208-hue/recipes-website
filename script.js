@@ -25,3 +25,6 @@ fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
     document.getElementById("popup-img").src = recipe.strMealThumb;
 });
 }
+function closePopup() {
+    document.getElementById("popup-box").style.display = "none";
+}
