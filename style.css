@@ -103,7 +103,7 @@ header {
     color: white; }
 #popup-img {
     height: 30vh;
-    width:100%;
+    width:50%;
     margin-bottom: 20px;
     position: fixed;
     top: 0;
@@ -121,7 +121,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
-    background-color: rgba(6, 0, 0, 0.8);
+    background-color: whitesmoke;
     padding: 30px;
     border-radius: 10px;
 }
