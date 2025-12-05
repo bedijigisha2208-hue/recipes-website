@@ -1,11 +1,11 @@
 #recipe-grid {
     background: white;
-    padding: 15px;
+    padding: 45px;
     cursor: pointer;
     transition: transform 0.2s;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
-    gap: 20px; 
+    gap: 25px; 
     position: relative;
 }
 
