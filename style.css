@@ -139,4 +139,15 @@ header {
 #recipe-head {
     background-image: url("https://tse2.mm.bing.net/th/id/OIP.pXwLrVla3u_gOJ-tK-OwvAAAAA?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=184&h=327&c=7&dpr=1.3&o=7&rm=3");
 }
-
+.recipe-card {
+    background-color: white;
+    width:220px;
+    padding:10px;
+    border-radius: 12px;
+}
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
