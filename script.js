@@ -6,6 +6,10 @@ function searchButton() {
         let recipes = data.meals;
         let container = document.getElementById("recipe-grid");
         container.innerHTML = "";
+        if (!recipes) {
+            alert("Woops! no recipes found, Please try another ingreient");
+            return;
+        }
         recipes.forEach(meal => container.innerHTML += `
             <div class ="recipe-card" onclick="openPopup(${meal.idMeal})">
             <img src="${meal.strMealThumb}" alt= "Recipe-Image">
